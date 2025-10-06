@@ -1,0 +1,38 @@
+# Politician Trade Tracker Configuration
+
+# List of politicians to track (case-insensitive partial match)
+# Examples: Nancy Pelosi, Paul Pelosi (Nancy's spouse), Dan Crenshaw, etc.
+politicians:
+  - Nancy Pelosi
+  - Paul Pelosi
+  # Add more politicians below:
+  # - Tommy Tuberville
+  # - Josh Gottheimer
+  # - Dan Crenshaw
+  # - Ro Khanna
+  # - Mark Green
+
+# How often to check for new trades (in minutes)
+check_interval_minutes: 60
+
+# Email notification settings
+email:
+  enabled: true
+  subject_prefix: "[Politician Trade Alert]"
+
+# Data source configuration
+data_source:
+  type: senate_stock_watcher
+  # This is a public dataset aggregating Congressional financial disclosures
+  url: https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com/aggregate/all_transactions.json
+
+# Popular politicians to track (uncomment to add):
+# - Nancy Pelosi (D-CA) - House Speaker (former)
+# - Paul Pelosi - Nancy's spouse, prolific trader
+# - Tommy Tuberville (R-AL) - Senator, frequent trader
+# - Josh Gottheimer (D-NJ) - Representative
+# - Dan Crenshaw (R-TX) - Representative
+# - Ro Khanna (D-CA) - Representative
+# - Mark Green (R-TN) - Representative
+# - Pat Fallon (R-TX) - Representative
+# - Debbie Stabenow (D-MI) - Senator

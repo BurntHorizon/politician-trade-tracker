@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  politician-tracker:
+    build: .
+    container_name: politician-trade-tracker
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./config.yaml:/app/config.yaml
+    environment:
+      - TZ=America/New_York
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
