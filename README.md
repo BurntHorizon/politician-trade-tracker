@@ -23,7 +23,7 @@ A Docker-based application that monitors Congressional stock trades and sends em
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/politician-trade-tracker.git
+git clone https://github.com/BurntHorizon/politician-trade-tracker.git
 cd politician-trade-tracker
 ```
 
