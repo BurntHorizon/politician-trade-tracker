@@ -1,6 +1,12 @@
 # 🏛️ Politician Trade Tracker
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://www.docker.com/)
+
 A Docker-based application that monitors Congressional stock trades and sends email notifications when tracked politicians make new trades. Track any member of Congress and get instant alerts about their stock transactions.
+
+> **📖 Full documentation:** See [SETUP_GUIDE.md](SETUP_GUIDE.md) for detailed setup instructions and [docs/EXAMPLES.md](docs/EXAMPLES.md) for usage examples.
 
 ## Features
 
@@ -14,10 +20,11 @@ A Docker-based application that monitors Congressional stock trades and sends em
 
 ## Quick Start
 
-### 1. Clone/Download
+### 1. Clone the Repository
 
 ```bash
-cd /Users/alex/Coding/Pelosi_tech
+git clone https://github.com/YOUR_USERNAME/politician-trade-tracker.git
+cd politician-trade-tracker
 ```
 
 ### 2. Configure Email Settings
